@@ -21,6 +21,46 @@
     <meta content="" name="descriptison">
     <meta content="" name="keywords">
 
+        <!-- Style Section -->
+    <style>
+        .skills-marquee-wrapper {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            background: #fff;
+            padding: 15px 0;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        .skills-marquee {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            animation: scrollSkills 25s linear infinite;
+            width: max-content;
+        }
+
+            .skills-marquee img {
+                height: 50px;
+                object-fit: contain;
+            }
+
+        @keyframes scrollSkills {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        .skills-marquee-wrapper:hover .skills-marquee {
+            animation-play-state: paused;
+        }
+    </style>
+    
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -478,43 +518,56 @@
     <!-- Start Skills Section -->
 
     <section id="skills" class="services">
-        <div class="container">
-            <div class="section-title">
-                <h2>Skills</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-12" data-aos="fade-up">
-                    <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
-                        <h4 style="text-align:left;color:#09203a">Languages and Databases</h4>
-                        <p style="text-align:left;">
-                            <img src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg" alt="vectorlogo.zone" height="50" width="150">
-                            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="vectorlogo.zone" height="50" width="150">
-                            <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg" alt="vectorlogo.zone" height="50" width="150">
-                            <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-ar21.svg" alt="vectorlogo.zone" height="50" width="150">
-                        </p>
-                    </div>
-                    <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
-                        <h4 style="text-align:left;color:#09203a">Frameworks / Library</h4>
-                        <p style="text-align:left;">
-                            <img src="https://www.vectorlogo.zone/logos/dotnet/dotnet-horizontal.svg" alt="vectorlogo.zone">
-                            <img src="https://www.vectorlogo.zone/logos/jquery/jquery-ar21.svg" alt="vectorlogo.zone">
-                        </p>
-                    </div>
+     <div class="container">
+         <div class="section-title">
+             <h2>Skills</h2>
+         </div>
 
-                    <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
-                        <h4 style="text-align:left;color:#09203a">Tools</h4>
-                        <p style="text-align:left;">
-                            <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="vectorlogo.zone">
-                            <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-ar21.svg" alt="vectorlogo.zone">
+         <!-- Section 1: Languages and Databases -->
+         <div class="skill-category">
+             <h4 style="text-align: left; color: #59de09">Languages and Databases</h4>
+             <div class="skills-marquee-wrapper">
+                 <div class="skills-marquee">
+                     <img src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg" alt="JavaScript" />
+                     <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="HTML5" />
+                     <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg" alt="CSS3" />
+                     <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-ar21.svg" alt="TailwindCSS" />
+                     <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="SQL Server" height="50" />
+                     <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="C#" height="50" />
+                 </div>
+             </div>
+         </div>
 
+         <!-- Section 2: Frameworks / Library -->
+         <div class="skill-category">
+             <h4 style="text-align: left; color: #59de09">Frameworks / Library / Other Technologies</h4>
+             <div class="skills-marquee-wrapper">
+                 <div class="skills-marquee">
+                     <img src="https://www.vectorlogo.zone/logos/dotnet/dotnet-horizontal.svg" alt=".NET" />
+                     <img src="https://www.vectorlogo.zone/logos/jquery/jquery-ar21.svg" alt="jQuery" />
+                     <img src="https://img.shields.io/badge/ADO.NET-0078D7?style=for-the-badge&logo=.net&logoColor=white" alt="ADO.NET Badge" />
+                     <img src="https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white" alt="JSON Badge" />
+                     <img src="https://img.shields.io/badge/REST%20API-6DB33F?style=for-the-badge&logo=swagger&logoColor=white" alt="REST API Badge" />
+                 </div>
+             </div>
+         </div>
 
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+         <!-- Section 3: Tools -->
+         <div class="skill-category">
+             <h4 style="text-align: left; color: #59de09">Tools</h4>
+             <div class="skills-marquee-wrapper">
+                 <div class="skills-marquee">
+                     <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="Git" />
+                     <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-ar21.svg" alt="Postman" />
+                     <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Swagger-logo.png" alt="Swagger" height="50" />
+                     <img src="https://visualstudio.microsoft.com/wp-content/uploads/2021/10/Product-Icon.svg" alt="Visual Studio" height="50" />
+                     <img src="https://img.shields.io/badge/TFS-003366?style=for-the-badge&logo=azure-devops&logoColor=white" alt="TFS Badge" />
+                     <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="SSMS" height="50" />
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
     <!-- End Skills Section -->
     <!-- Start Links section -->
     <!--<section id="links" class="services">
