@@ -59,6 +59,72 @@
         .skills-marquee-wrapper:hover .skills-marquee {
             animation-play-state: paused;
         }
+         .experience-section {
+     padding: 60px 20px;
+    /* background: #0f1f3e;*/
+     color: #f0f0f0;
+     font-family: 'Segoe UI', sans-serif;
+ }
+
+ .section-title h2 {
+     font-size: 32px;
+     font-weight: bold;
+     text-align: center;
+     margin-bottom: 40px;
+     color: #12d640;
+ }
+
+ .experience-box {
+     background: #1e2d4d;
+     border-radius: 12px;
+     padding: 30px;
+     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+     transition: transform 0.3s ease;
+ }
+
+     .experience-box:hover {
+         transform: translateY(-5px);
+     }
+
+ .company-link {
+     color: #12d640;
+     font-size: 20px;
+     font-weight: bold;
+     text-decoration: none;
+ }
+
+     .company-link:hover {
+         text-decoration: underline;
+     }
+
+ .date {
+     color: #ccc;
+     font-size: 14px;
+     margin: 5px 0 10px 0;
+ }
+
+ .role {
+     font-size: 16px;
+     color: #9ad8a5;
+     margin-bottom: 20px;
+ }
+
+ .experience-details {
+     list-style: none;
+     padding-left: 0;
+     font-size: 16px;
+ }
+
+     .experience-details > li {
+         margin-bottom: 15px;
+         line-height: 1.6;
+     }
+
+ .nested-list {
+     list-style-type: disc;
+     margin-left: 20px;
+     margin-top: 8px;
+ }
     </style>
     
     <!-- Google Fonts -->
@@ -352,64 +418,51 @@
     <!-- End Education Section -->
     <!-- Start Experience Section -->
 
-    <section id="experience" class="services">
-        <div class="container">
-            <div class="section-title">
-                <h2>Experience</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-12" data-aos="fade-up">
-                    <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                        <h4 style="text-align:left;"><a href="https://mponline.gov.in/portal/" style="color:#12d640">MPOnline Ltd. ( Joint venture between TCS & MP Govt.)</a><br> </h4>
-                        <h5 style="text-align:left;">June 2020 - Present</h5>
-                        <p style="text-align:left;color:#fff"><em>Software Engineer </em></p>
-                        <ul style="text-align:left;">
+    <section id="experience" class="experience-section">
+     <div class="container">
+         <div class="section-title">
+             <h2>Experience</h2>
+         </div>
 
-                            <li>
-                                <b> Domain:</b>   Specialized in G2C (Government to Citizen) services and Kiosk-based applications.
-                            </li>
-                            <li>
-                                <b>
-                                    Technologies Used:
-                                </b>
+         <div class="experience-box" data-aos="fade-up">
+             <h4>
+                 <a href="https://mponline.gov.in/portal/" target="_blank" class="company-link">
+                     MPOnline Ltd. (Joint venture between TCS & MP Govt.)
+                 </a>
+             </h4>
+             <h5 class="date">June 2020 - Present</h5>
+             <p class="role"><em>Software Engineer</em></p>
 
-                                Backend: ASP.NET (Web Forms / MVC)
+             <ul class="experience-details">
+                 <li><strong>Domain:</strong> Specialized in G2C (Government to Citizen) services and Kiosk-based applications.</li>
 
-                                Database: SQL Server (Stored Procedures, Views, Transactions)
+                 <li>
+                     <strong>Technologies Used:</strong><br />
+                     Backend: ASP.NET (Web Forms / MVC)<br />
+                     Database: SQL Server (Stored Procedures, Views, Transactions)<br />
+                     Frontend: HTML, CSS, basic JavaScript
+                 </li>
 
-                                Frontend: HTML, CSS, basic JavaScript
-                            </li>
+                 <li>
+                     <strong>Key Contributions:</strong>
+                     <ul class="nested-list">
+                         <li>Developed secure and scalable web applications for citizen services.</li>
+                         <li>Integrated services with kiosk systems for real-time data access.</li>
+                         <li>Worked on modules like login, document verification, and service tracking.</li>
+                     </ul>
+                 </li>
 
-                            <li>
-                                <b>
-                                    Key Contributions:
-                                </b>
-
-                                Developed secure and scalable web applications for citizen services.
-
-                                Integrated services with kiosk systems to ensure real-time data access.
-
-                                Worked on modules like login, document verification, and service tracking.
-                            </li>
-
-                            <li>
-                                <b>
-                                    Support & Collaboration:
-                                </b>
-                                Assisted the customer support team by providing resolutions and technical inputs.
-
-                                Actively shared technical knowledge and best practices within the team.
-                            </li>
-
-
-
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
+                 <li>
+                     <strong>Support & Collaboration:</strong>
+                     <ul class="nested-list">
+                         <li>Assisted the customer support team with technical resolutions.</li>
+                         <li>Actively shared knowledge and best practices with team members.</li>
+                     </ul>
+                 </li>
+             </ul>
+         </div>
+     </div>
+ </section>
 
     <!-- End Experience Section -->
     <!-- Start Project Section -->
